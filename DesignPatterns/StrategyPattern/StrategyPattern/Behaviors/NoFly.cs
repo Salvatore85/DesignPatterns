@@ -9,7 +9,7 @@ namespace StrategyPattern.Behaviors
     {
         public void Fly()
         {
-            Console.WriteLine("I cannot fly.");
+            Console.WriteLine("I can't fly.");
         }
     }
 }
