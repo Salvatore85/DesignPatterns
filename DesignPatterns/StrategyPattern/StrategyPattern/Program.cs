@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StrategyPattern.Behaviors;
+using System;
 
 namespace StrategyPattern
 {
@@ -6,10 +7,11 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
-            Duck mallard = new MallardDuck();
+            Duck model = new ModelDuck();
 
-            mallard.PerformQuack();
-            mallard.PerformFly();
+            model.PerformFly();
+            model.SetFlyBehavior(new FlyRocketPowered());
+            model.PerformFly();
         }
     }
 }

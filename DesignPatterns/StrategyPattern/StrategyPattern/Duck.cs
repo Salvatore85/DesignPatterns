@@ -29,5 +29,15 @@ namespace StrategyPattern
         {
             Console.WriteLine("I'm a duck.");
         }
+
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            FlyBehavior = fb;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            QuackBehavior = qb;
+        }
     }
 }
