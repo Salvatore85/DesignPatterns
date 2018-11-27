@@ -7,7 +7,7 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
-            Duck model = new ModelDuck();
+            var model = new ModelDuck();
 
             model.PerformFly();
             model.SetFlyBehavior(new FlyRocketPowered());
