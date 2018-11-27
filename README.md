@@ -1,3 +1,3 @@
 # Design Pattern
 
-This repository is a showcase for a few populair design patterns.
+This repository is a showcase for a few populair design patterns. The examples are inspired from the book "Head First: Design Patterns"
