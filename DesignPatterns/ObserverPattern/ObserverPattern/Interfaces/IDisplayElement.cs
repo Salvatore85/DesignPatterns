@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ObserverPattern.Interfaces
 {
-    public interface DisplayElement
+    public interface IDisplayElement
     {
         void Display();
     }

@@ -35,6 +35,7 @@ namespace ObserverPattern
         public void RemoveObserver(IObserver o)
         {
             int i = observers.IndexOf(o);
+
             if (i >= 0)
             {
                 observers.Remove(i);
@@ -48,6 +49,11 @@ namespace ObserverPattern
             this.pressure = pressure;
 
             MeasurementsChanged();
+        }
+
+        private void MeasurementsChanged()
+        {
+            NotifyObserver();
         }
     }
 }
