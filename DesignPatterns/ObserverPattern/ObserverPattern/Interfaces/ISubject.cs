@@ -6,8 +6,8 @@ namespace ObserverPattern.Interfaces
 {
     public interface ISubject
     {
-        void RegisterObserver(Observer o);
-        void RemoveObserver(Observer o);
+        void RegisterObserver(IObserver o);
+        void RemoveObserver(IObserver o);
         void NotifyObserver();
     }
 }
