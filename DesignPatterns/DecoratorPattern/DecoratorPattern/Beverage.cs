@@ -6,7 +6,7 @@ namespace DecoratorPattern
 {
     public abstract class Beverage
     {
-        string description = "Unnkown Beverage";
+        string description = "Unknown Beverage";
 
         public string GetDescription()
         {

@@ -6,9 +6,6 @@ namespace DecoratorPattern
 {
     public class CondimentDecorator : Beverage
     {
-        public override double Cost()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
