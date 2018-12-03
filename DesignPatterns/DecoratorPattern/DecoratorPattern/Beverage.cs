@@ -8,7 +8,7 @@ namespace DecoratorPattern
     {
         string description = "Unnkown Beverage";
 
-        public string Get Description()
+        public string GetDescription()
         {
             return description;
         }
