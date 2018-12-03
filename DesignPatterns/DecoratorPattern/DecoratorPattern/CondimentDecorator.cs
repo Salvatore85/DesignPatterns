@@ -4,8 +4,8 @@ using System.Text;
 
 namespace DecoratorPattern
 {
-    public class CondimentDecorator : Beverage
+    public abstract class CondimentDecorator : Beverage
     {
-       
+        public abstract string GetDescription();
     }
 }

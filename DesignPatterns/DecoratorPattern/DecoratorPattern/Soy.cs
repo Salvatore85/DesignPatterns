@@ -6,5 +6,14 @@ namespace DecoratorPattern
 {
     public class Soy : CondimentDecorator
     {
+        public override double Cost()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GetDescription()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
