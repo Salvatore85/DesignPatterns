@@ -6,14 +6,19 @@ namespace DecoratorPattern
 {
     public class Mocha : CondimentDecorator
     {
+        public Mocha(Beverage beverage)
+        {
+            Beverage = beverage;
+        }
+
         public override double Cost()
         {
-            throw new NotImplementedException();
+            return .20 + Beverage.Cost();
         }
 
         public override string GetDescription()
         {
-            throw new NotImplementedException();
+            return Beverage.GetDescription() + ", Mocha";
         }
     }
 }

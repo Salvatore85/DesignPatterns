@@ -8,7 +8,12 @@ namespace DecoratorPattern
     {
         public override double Cost()
         {
-            throw new NotImplementedException();
+            return .89;
+        }
+
+        public override string GetDescription()
+        {
+            return "House Blend";
         }
     }
 }

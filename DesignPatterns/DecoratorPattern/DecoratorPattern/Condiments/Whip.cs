@@ -8,12 +8,12 @@ namespace DecoratorPattern
     {
         public override double Cost()
         {
-            throw new NotImplementedException();
+            return .10 + Beverage.Cost();
         }
 
         public override string GetDescription()
         {
-            throw new NotImplementedException();
+            return Beverage.GetDescription() + ", Whip";
         }
     }
 }

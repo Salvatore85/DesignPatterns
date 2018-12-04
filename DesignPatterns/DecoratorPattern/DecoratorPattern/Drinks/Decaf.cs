@@ -8,7 +8,12 @@ namespace DecoratorPattern
     {
         public override double Cost()
         {
-            throw new NotImplementedException();
+            return 1.05;
+        }
+
+        public override string GetDescription()
+        {
+            return "Decaf";
         }
     }
 }

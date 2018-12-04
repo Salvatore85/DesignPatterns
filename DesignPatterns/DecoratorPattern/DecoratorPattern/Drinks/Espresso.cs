@@ -6,16 +6,14 @@ namespace DecoratorPattern
 {
     public class Espresso : Beverage
     {
-        public Espresso()
-        {
-            Description = "Espresso";
-        }
-
-        public override string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public override double Cost()
         {
-            throw new NotImplementedException();
+            return 1.99;
+        }
+
+        public override string GetDescription()
+        {
+            return "Espresso";
         }
     }
 }
