@@ -6,6 +6,11 @@ namespace DecoratorPattern
 {
     public class Soy : CondimentDecorator
     {
+        public Soy(Beverage beverage)
+        {
+            Beverage = beverage;
+        }
+
         public override double Cost()
         {
             return .15 + Beverage.Cost();
