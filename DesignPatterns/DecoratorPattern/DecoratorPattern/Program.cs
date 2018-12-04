@@ -19,6 +19,7 @@ namespace DecoratorPattern
             beverage3 = new Mocha(beverage3);
             beverage3 = new Mocha(beverage3);
             beverage3 = new Whip(beverage3);
+            beverage3 = new Milk(beverage3);
             Console.WriteLine(beverage3.GetDescription() + " $" + beverage3.Cost());
         }
     }
