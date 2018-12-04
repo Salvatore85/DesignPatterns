@@ -6,11 +6,11 @@ namespace DecoratorPattern
 {
     public abstract class Beverage
     {
-        string description = "Unknown Beverage";
+        public abstract string Description { get; set; }
 
-        public string GetDescription()
+        public  Beverage()
         {
-            return description;
+            Description = "Unknown Beverage";
         }
 
         public abstract double Cost();
