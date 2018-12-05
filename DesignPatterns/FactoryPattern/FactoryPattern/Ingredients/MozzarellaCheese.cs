@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FactoryPattern.Ingredients
 {
-    public class Pepperoni : IPepperoni
+    public class MozzarellaCheese : ICheese
     {
-        public string Name => "Pepperoni";
+        public string Name => "Mozzeralle";
     }
 }

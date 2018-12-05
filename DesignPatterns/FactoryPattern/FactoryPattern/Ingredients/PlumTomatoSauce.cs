@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FactoryPattern.Ingredients
 {
-    public class Sauce : ISauce
+    public class PlumTomatoSauce : ISauce
     {
-        public string Name => "Sauce";
+        public string Name => "Plum Tomato Sauce";
     }
 }
