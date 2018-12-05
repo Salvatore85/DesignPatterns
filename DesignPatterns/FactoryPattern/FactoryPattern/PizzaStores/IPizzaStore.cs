@@ -7,6 +7,6 @@ namespace FactoryPattern.PizzaStores
 {
     public interface IPizzaStore
     {
-        IPizza CreatePizza();
+        Pizza CreatePizza();
     }
 }
