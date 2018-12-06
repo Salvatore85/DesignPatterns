@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FactoryPattern.Pizzas;
+using FactoryPattern.PizzaStores;
+using System;
 
 namespace FactoryPattern
 {
@@ -6,7 +8,13 @@ namespace FactoryPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var nyStore = new NYPizzaStore();
+            var pizza = nyStore.OrderPizza(PizzaType.Pepperoni);
+            Console.WriteLine($"Here is your {pizza.Name}");
+
+            var chicagoStore = new ChicagoPizzaStore();
+            var pizza1 = chicagoStore.OrderPizza(PizzaType.Pepperoni);
+            Console.WriteLine($"Here is your {pizza1.Name}");
         }
     }
 }
