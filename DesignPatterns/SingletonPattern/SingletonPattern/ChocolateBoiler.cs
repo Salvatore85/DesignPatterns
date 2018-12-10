@@ -6,7 +6,8 @@ namespace SingletonPattern
 {
     public class ChocolateBoiler
     {
-        private static ChocolateBoiler chocolateBoiler;
+        private static readonly Lazy<ChocolateBoiler> Lazy = 
+            new Lazy<ChocolateBoiler>(() => new ChocolateBoiler(), System.Threading.LazyThreadSafetyMode.ExecutionAndPublication);
 
         private ChocolateBoiler()
         {
@@ -17,14 +18,31 @@ namespace SingletonPattern
         private bool Empty;
         private bool Boiled;
 
-        public static ChocolateBoiler Instance ()
+        public void Fill()
         {
-            if(chocolateBoiler == null) 
+            if (isEmpty())
             {
-                chocolateBoiler = new ChocolateBoiler();
+                Empty = false;
+                Boiled = false;
             }
+        }
 
-            return chocolateBoiler;
+        public void Drain()
+        {
+            if (!isEmpty() && isBoild())
+            {
+                Empty = true;
+            }
+        }
+
+        private bool isBoild()
+        {
+            return Boiled;
+        }
+
+        private bool isEmpty()
+        {
+            return Empty;
         }
     }
 }
