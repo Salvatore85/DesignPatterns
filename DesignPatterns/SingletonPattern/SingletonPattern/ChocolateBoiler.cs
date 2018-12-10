@@ -35,6 +35,14 @@ namespace SingletonPattern
             }
         }
 
+        public void Boil()
+        {
+            if (!isEmpty() && !isBoild())
+            {
+                Boiled = true;
+            }
+        }
+
         private bool isBoild()
         {
             return Boiled;
